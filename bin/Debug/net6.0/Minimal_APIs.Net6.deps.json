@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Minimal_APIs.Net6/1.0.0": {
+        "runtime": {
+          "Minimal_APIs.Net6.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Minimal_APIs.Net6/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
