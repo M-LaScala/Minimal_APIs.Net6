@@ -10,13 +10,20 @@
 
 // Usando o EntityFramework para o banco de dados
 using Microsoft.EntityFrameworkCore;
+using System.Net.Http;
+using System.Net.Mime;
+using System.Text;
 
 // Gera o builder
 var builder = WebApplication.CreateBuilder(args);
 
 // Services - Configurando o banco de dados para memoria local
 builder.Services.AddDbContext<ComputerContext>
-    (o => o.UseInMemoryDatabase("cComputers"));
+    (o => o.UseInMemoryDatabase("Computers"));
+
+// Configurando o swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 // Cria o app com base no builder
 var app = builder.Build();
@@ -31,14 +38,22 @@ var app = builder.Build();
  * e tratar de verificar o campo
  */
 
+// Definindo o endpoint do swagger
+app.MapSwagger();
+// Interface do swagger
+app.UseSwaggerUI();
+
 // Quando chega uma requisição é informado a msg
-app.MapGet("/", () => "Ola usuario" );
+// .ExcludeFromDescription(); Remove a documentação do swagger
+app.MapGet("/", () => "Ola usuario" ).ExcludeFromDescription();
+app.MapGet("/html", () => Results.Extensions.Html("<h1>Ola usuario</h1>")).ExcludeFromDescription();
 
 // O => é uma expressão lambda ( Pesquisar dps )
 
 // Endpoints
-app.MapGet("/Computers", async(ComputerContext context) => 
-                                await context.Computers.ToListAsync());
+app.MapGet("/Computers", async (ComputerContext context) =>
+                                await context.Computers.ToListAsync())
+    .Produces<List<Computer>>(StatusCodes.Status200OK);
 
 app.MapGet("/Computers/{id}", async(int id, ComputerContext context) => 
                                 await context.Computers.FirstOrDefaultAsync(a=>a.Id == id));
@@ -53,11 +68,11 @@ app.MapPost("/Computers", async(Computer computer, ComputerContext context, Http
         // No lugar de retornar o objeto é melhor retornar o resultado 
         //return computer;
 
-        return Results.Created($"/computers/{computer.Id}", computer);
+        return Results.Created($"/Computers/{computer.Id}", computer);
 
     });
 
-app.MapPut("/computers/{id}", async(Computer computer, ComputerContext context) 
+app.MapPut("/Computers/{id}", async(Computer computer, ComputerContext context) 
     =>
     {
         context.Entry(computer).State = EntityState.Modified;
@@ -66,7 +81,7 @@ app.MapPut("/computers/{id}", async(Computer computer, ComputerContext context)
         return computer;
     });
 
-app.MapDelete("/computers/{id}", async (int id, ComputerContext context)
+app.MapDelete("/Computers/{id}", async (int id, ComputerContext context)
     =>
     {
         var computer = await context.Computers.FirstOrDefaultAsync(a => a.Id == id);
@@ -118,10 +133,43 @@ public class ComputerContext : DbContext
  * 
 */
 
-// Exemplo requisiçao
+// Exemplo requisiçao via postman
 /*
 {
     "name":"Mackbook",
     "brand":"Apple"
 }
 */
+
+// Como usar o swagger - Projeto - botão direito - pacotes nuget ( não pode estar em execução )
+// Swashbuckle.AspNetCore 
+/*
+ *Ele interpreta o JSON do Swagger a fim de criar uma experiência rica e 
+ *personalizável para descrever a funcionalidade da API Web.
+*/
+
+static class ResultsExtensions
+{
+    public static IResult Html(this IResultExtensions resultExtensions, string html)
+    {
+        return new HtmlResult(html);
+    }
+}
+
+class HtmlResult : IResult
+{
+
+    private string _html;
+
+    public HtmlResult(string html)
+    {
+        _html = html;
+    }
+
+    public Task ExecuteAsync(HttpContext httpContext)
+    {
+        httpContext.Response.ContentType = MediaTypeNames.Text.Html;
+        httpContext.Response.ContentLength = Encoding.UTF8.GetByteCount(_html);
+        return httpContext.Response.WriteAsync(_html);
+    }
+}

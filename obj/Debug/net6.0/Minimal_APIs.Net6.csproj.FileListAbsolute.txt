@@ -40,3 +40,8 @@ C:\Users\Matheus\Desktop\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.dl
 C:\Users\Matheus\Desktop\Minimal_APIs.Net6\obj\Debug\net6.0\ref\Minimal_APIs.Net6.dll
 C:\Users\Matheus\Desktop\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.pdb
 C:\Users\Matheus\Desktop\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.genruntimeconfig.cache
+C:\Users\Matheus\Desktop\Minimal_APIs.Net6\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\Matheus\Desktop\Minimal_APIs.Net6\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Matheus\Desktop\Minimal_APIs.Net6\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Matheus\Desktop\Minimal_APIs.Net6\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Matheus\Desktop\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.MvcApplicationPartsAssemblyInfo.cs
