@@ -45,3 +45,36 @@ C:\Users\Matheus\Desktop\Minimal_APIs.Net6\bin\Debug\net6.0\Swashbuckle.AspNetCo
 C:\Users\Matheus\Desktop\Minimal_APIs.Net6\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Matheus\Desktop\Minimal_APIs.Net6\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Matheus\Desktop\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.MvcApplicationPartsAssemblyInfo.cs
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\bin\Debug\net6.0\Minimal_APIs.Net6.exe
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\bin\Debug\net6.0\Minimal_APIs.Net6.deps.json
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\bin\Debug\net6.0\Minimal_APIs.Net6.runtimeconfig.json
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\bin\Debug\net6.0\Minimal_APIs.Net6.dll
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\bin\Debug\net6.0\Minimal_APIs.Net6.pdb
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.csproj.AssemblyReference.cache
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.GeneratedMSBuildEditorConfig.editorconfig
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.AssemblyInfoInputs.cache
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.AssemblyInfo.cs
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.csproj.CoreCompileInputs.cache
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.MvcApplicationPartsAssemblyInfo.cs
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.MvcApplicationPartsAssemblyInfo.cache
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\staticwebassets\msbuild.Minimal_APIs.Net6.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\staticwebassets\msbuild.build.Minimal_APIs.Net6.props
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.Minimal_APIs.Net6.props
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.Minimal_APIs.Net6.props
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\staticwebassets.pack.json
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\staticwebassets.build.json
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\staticwebassets.development.json
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\scopedcss\bundle\Minimal_APIs.Net6.styles.css
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.csproj.CopyComplete
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.dll
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\refint\Minimal_APIs.Net6.dll
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.pdb
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\Minimal_APIs.Net6.genruntimeconfig.cache
+D:\Matheus\Projetos Git_Hub\Minimal_APIs.Net6\obj\Debug\net6.0\ref\Minimal_APIs.Net6.dll

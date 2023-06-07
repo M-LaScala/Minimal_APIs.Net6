@@ -1,6 +1,7 @@
-﻿/* Editar arquivo de projeto -> botão direito no projeto Minimal_APis.Net6
+﻿/* 
+ * Editar arquivo de projeto -> botão direito no projeto Minimal_APis.Net6
  *
- *<Project Sdk="Microsoft.NET.Sdk"> mudar para <Project Sdk="Microsoft.NET.Sdk.Web">
+ * <Project Sdk="Microsoft.NET.Sdk"> mudar para <Project Sdk="Microsoft.NET.Sdk.Web">
  *
  * Informa que sera uma aplicação Web
  *
@@ -10,6 +11,7 @@
 
 // Usando o EntityFramework para o banco de dados
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Net.Http;
 using System.Net.Mime;
 using System.Text;
@@ -33,7 +35,8 @@ var app = builder.Build();
 // MapPut  ele recebe algo ( editar ) - Editar algo que já existe
 // Mapdelet ele recebe algo ( deletar ) - Deleta um registro
 
-/* Exclusão fisica APAGAR o registro ( não é rocomendado )
+/* 
+ * Exclusão fisica APAGAR o registro ( não é rocomendado )
  * Exclusão logica criar um campo "Cancelado" "Inativo" "Deletado" e marcar como TRUE
  * e tratar de verificar o campo
  */
@@ -43,14 +46,80 @@ app.MapSwagger();
 // Interface do swagger
 app.UseSwaggerUI();
 
-// Quando chega uma requisição é informado a msg
+// MapGet é um método de extensão que é usado para mapear uma rota HTTP GET.
+// No exemplo, estamos mapeando a rota para o caminho raiz ("/") da aplicação.
 // .ExcludeFromDescription(); Remove a documentação do swagger
-app.MapGet("/", () => "Ola usuario" ).ExcludeFromDescription();
-app.MapGet("/html", () => Results.Extensions.Html("<h1>Ola usuario</h1>")).ExcludeFromDescription();
+string msg = "Olá usuário, para acessar o Swagger, utilize a rota /swagger.\nPara visualizar a mensagem de boas-vindas, utilize a rota /html.";
+app.MapGet("/", () => msg).ExcludeFromDescription();
 
-// O => é uma expressão lambda ( Pesquisar dps )
 
-// Endpoints
+// Inicio criação deu uma 'Pagina' Html 
+// A expressão Results.Extensions.HtmlA é específica para retornar uma resposta no formato HTML.
+// Essa extensão é útil quando você deseja retornar uma página HTML completa como resultado de uma ação de controlador.
+// Ela permite que você construa facilmente uma resposta HTML personalizada e retorne-a para o cliente.
+
+string titulo = "Bem-vindo, usuário! É uma surpresa vê-lo por aqui.";
+string conteudoChatGPT = "<p>Aqui está o conteúdo HTML gerado pelo Chat GPT!</p>";
+string versaoChat = "<p>Versão atual do chat: 1.0.0.</p>";
+
+string conteudoHtml = $@"
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset='UTF-8'>
+            <title>Bem-vindo!</title>
+            <style>
+                .container {{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                    text-align: center;
+                }}
+            </style>
+        </head>
+        <body>
+            <div class='container'>
+                <h1>{titulo}</h1>
+                {conteudoChatGPT}
+                {versaoChat}
+            </div>
+        </body>
+        </html>
+    ";
+
+app.MapGet("/html", () => Results.Extensions.Html(conteudoHtml)).ExcludeFromDescription();
+
+// Os '=>' são uma expressão lambda.
+
+/* 
+* As expressões lambda são uma ferramenta poderosa para escrever código conciso e legível em C#.
+* Elas são amplamente utilizadas em programação assíncrona, LINQ (Language Integrated Query), manipulação de eventos, entre outros cenários onde funções anônimas são necessárias.
+*/
+
+// Funções Anônimas:
+/* 
+* Significa que você pode definir uma função sem fornecer um nome explícito. 
+* Isso é útil quando você precisa de uma função simples que será usada apenas em um contexto específico e não precisa ser definida em outro lugar.
+*/
+
+// Uso com Métodos de Ordem Superior:
+/* 
+* Por exemplo Where, Select, OrderBy, entre outros, para realizar operações em coleções de objetos. 
+* Elas permitem que você especifique a lógica que será aplicada a cada elemento da coleção de forma concisa e flexível.
+*/
+
+// Async e Await
+/*
+ * A palavra-chave async é usada para definir um método como assíncrono.
+ * 
+ * A palavra-chave await é usada para aguardar a conclusão de uma operação assíncrona. 
+ * Ela é usada dentro de um método assíncrono para indicar o ponto em que o fluxo de execução deve esperar até que a operação assíncrona seja concluída antes de continuar.
+*/
+
+
+// Demais Endpoints
 app.MapGet("/Computers", async (ComputerContext context) =>
                                 await context.Computers.ToListAsync())
     .Produces<List<Computer>>(StatusCodes.Status200OK);

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Minimal_APIs.Net6.props" />
+</Project>

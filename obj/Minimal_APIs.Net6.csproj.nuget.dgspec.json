@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Matheus\\Desktop\\Minimal_APIs.Net6\\Minimal_APIs.Net6.csproj": {}
+    "D:\\Matheus\\Projetos Git_Hub\\Minimal_APIs.Net6\\Minimal_APIs.Net6.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Matheus\\Desktop\\Minimal_APIs.Net6\\Minimal_APIs.Net6.csproj": {
+    "D:\\Matheus\\Projetos Git_Hub\\Minimal_APIs.Net6\\Minimal_APIs.Net6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Matheus\\Desktop\\Minimal_APIs.Net6\\Minimal_APIs.Net6.csproj",
+        "projectUniqueName": "D:\\Matheus\\Projetos Git_Hub\\Minimal_APIs.Net6\\Minimal_APIs.Net6.csproj",
         "projectName": "Minimal_APIs.Net6",
-        "projectPath": "C:\\Users\\Matheus\\Desktop\\Minimal_APIs.Net6\\Minimal_APIs.Net6.csproj",
+        "projectPath": "D:\\Matheus\\Projetos Git_Hub\\Minimal_APIs.Net6\\Minimal_APIs.Net6.csproj",
         "packagesPath": "C:\\Users\\Matheus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Matheus\\Desktop\\Minimal_APIs.Net6\\obj\\",
+        "outputPath": "D:\\Matheus\\Projetos Git_Hub\\Minimal_APIs.Net6\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,7 +26,9 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.myget.org/F/discord-net/api/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -59,7 +61,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -71,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
