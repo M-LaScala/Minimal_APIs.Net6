@@ -173,7 +173,7 @@ public class Computer
 
 }
 
-/* Vamos usar o entit framework para gravar os dados pelo oq entendi
+/* Vamos usar o entit framework para gravar os dados
 * Este provedor de banco de dados permite que o Entity Framework Core seja usado com um banco de dados em memória. 
 * O banco de dados na memória pode ser útil para teste 
 * O banco de dados na memória é projetado apenas para teste.
@@ -195,10 +195,9 @@ public class ComputerContext : DbContext
 /* Anotações sobre o Postman
  * Serve para enviar requisições para uma url 
  * 
- * Colar a url https://localhost:44373 <- No caso a minha
+ * Colar a url https://localhost:44373
  * colocar no modo post
  * Body -> raw -> JSON
- * 
  * 
 */
 
