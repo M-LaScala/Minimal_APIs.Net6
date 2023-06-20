@@ -47,7 +47,7 @@ Aqui estão disponíveis os endpoints exibidos no Swagger. Além disso, você en
 
 Aqui está um exemplo de requisição GET que pode ser realizada através da ferramenta Postman. Esse exemplo demonstra como fazer uma requisição GET para obter todos dados de um determinado endpoint da API.
 
-![](./Assets/Get Postman.png)
+![](./Assets/GetPostman.png)
 
 ## Conclusão
 
