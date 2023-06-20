@@ -39,6 +39,7 @@ Neste projeto, foi utilizado as seguintes tecnologias:
 ![](./Assets/NuGet.png)
 
 Swashbuckle.AspNetCore.Swagger é uma biblioteca na qual fornece suporte para geração de documentação interativa da API em aplicativos ASP.NET Core usando o Swagger.
+
 Microsoft.EntityFrameworkCore.InMemory fornece suporte para o Entity Framework Core criar um banco de dados em memória durante a execução de um aplicativo.
 
 Aqui estão disponíveis os endpoints exibidos no Swagger. Além disso, você encontrará informações detalhadas sobre cada endpoint, incluindo os métodos HTTP suportados, os parâmetros necessários, as respostas esperadas e as possíveis opções de autenticação.
