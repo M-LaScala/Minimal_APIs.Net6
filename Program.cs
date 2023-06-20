@@ -154,9 +154,20 @@ app.MapDelete("/Computers/{id}", async (int id, ComputerContext context)
     =>
     {
         var computer = await context.Computers.FirstOrDefaultAsync(a => a.Id == id);
-        context.Computers.Remove(computer);
-        await context.SaveChangesAsync();
+        
+        if (computer != null && computer.Id == id)
+        {
+            context.Computers.Remove(computer);
+            await context.SaveChangesAsync();
+        }
+        else
+        {
+            return Results.BadRequest("O id informado não foi encontrado.");
+        }
 
+        /* Results.NoContent() retorna um resultado HTTP com o status 204 No Content, 
+         * que indica que a requisição foi processada com sucesso, mas não há conteúdo para ser retornado.
+        */
         return Results.NoContent();
     });
 
@@ -175,8 +186,7 @@ public class Computer
 
 /* Vamos usar o entit framework para gravar os dados
 * Este provedor de banco de dados permite que o Entity Framework Core seja usado com um banco de dados em memória. 
-* O banco de dados na memória pode ser útil para teste 
-* O banco de dados na memória é projetado apenas para teste.
+* O banco de dados na memória pode ser útil para testes
 *
 * Microsoft.EntityFrameworkCore.InMemory
 * Botão direito no projeto gerenciar pacotes nugget
