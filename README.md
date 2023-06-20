@@ -34,14 +34,23 @@ Neste projeto, foi utilizado as seguintes tecnologias:
 
 1. Clone este repositório: `git clone https://github.com/M-LaScala/Minimal_APIs.Net6`
 2. Navegue até o diretório do projeto e abra o arquivo .SLN com o visual studio 2022+
-3. Instale os pacote NuGet dependetes
+3. Instale os pacote NuGet dependentes
+
+![](./Assets/NuGet.png)
 
 Swashbuckle.AspNetCore.Swagger é uma biblioteca na qual fornece suporte para geração de documentação interativa da API em aplicativos ASP.NET Core usando o Swagger.
+Microsoft.EntityFrameworkCore.InMemory fornece suporte para o Entity Framework Core criar um banco de dados em memória durante a execução de um aplicativo.
 
+Aqui estão disponíveis os endpoints exibidos no Swagger. Além disso, você encontrará informações detalhadas sobre cada endpoint, incluindo os métodos HTTP suportados, os parâmetros necessários, as respostas esperadas e as possíveis opções de autenticação.
+
+![](./Assets/Swagger.png)
+
+Aqui está um exemplo de requisição GET que pode ser realizada através da ferramenta Postman. Esse exemplo demonstra como fazer uma requisição GET para obter todos dados de um determinado endpoint da API.
+
+![](./Assets/Get Postman.png)
 
 ## Conclusão
 
-Este projeto está licenciado sob a [Licença XYZ](LICENSE) - substitua pelo tipo de licença que você está usando.
+Este projeto foi iniciado no ano de 2021, com o intuito de servir como um estudo prático para a criação de Minimal APIs com .NET. O objetivo principal é explorar e compreender os conceitos e práticas relacionadas à construção de APIs simplificadas e de alto desempenho utilizando a plataforma .NET.
 
-Inclua informações sobre a licença do projeto. Você pode fornecer um link para um arquivo de licença separado, se preferir.
 
