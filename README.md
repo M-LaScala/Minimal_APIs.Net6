@@ -1,4 +1,4 @@
-![image](https://github.com/M-LaScala/Minimal_APIs.Net6/assets/75446558/f1020658-99fb-4c10-9683-b47d57e6fcb9)![image](https://github.com/M-LaScala/Minimal_APIs.Net6/assets/75446558/76705777-841b-4778-baf8-884e066d0b76)# Minimal API - .Net 6
+# Minimal API - .Net 6
 
 Bem-vindo ao Projeto de Minimals apis! 
 
